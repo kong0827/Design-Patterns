@@ -10,14 +10,13 @@ import java.math.BigDecimal;
 public interface PayStrategy {
 
     /**
-     * 模式
+     * 支付方式
      * @return
      */
     public String getMode();
 
     /**
      * 支付接口
-     * @param type
      * @param price
      */
     void pay(BigDecimal price);

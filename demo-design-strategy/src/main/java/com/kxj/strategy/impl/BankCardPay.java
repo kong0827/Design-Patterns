@@ -8,21 +8,20 @@ import java.math.BigDecimal;
 
 /**
  * @author xiangjin.kong
- * @date 2021/4/8 22:00
- * @desc 支付宝支付
+ * @date 2021/4/8 22:04
+ * @desc 微信支付
  */
 @Slf4j
 @Component
-public class AliPay implements PayStrategy {
-
+public class BankCardPay implements PayStrategy {
     @Override
     public String getMode() {
-        return "aliPay";
+        return "bankCard";
     }
 
     @Override
     public void pay(BigDecimal price) {
         log.info("一大堆业务代码.....");
-        log.info("支付宝支付，支付了{}元", price);
+        log.info("银行卡支付，支付了{}元", price);
     }
 }

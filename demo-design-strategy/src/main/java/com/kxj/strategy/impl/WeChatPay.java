@@ -14,11 +14,14 @@ import java.math.BigDecimal;
 @Slf4j
 @Component
 public class WeChatPay implements PayStrategy {
+    @Override
     public String getMode() {
         return "weChat";
     }
 
+    @Override
     public void pay(BigDecimal price) {
-        log.info("使用微信支付：{}", price);
+        log.info("一大堆业务代码.....");
+        log.info("微信支付，支付了{}元", price);
     }
 }
