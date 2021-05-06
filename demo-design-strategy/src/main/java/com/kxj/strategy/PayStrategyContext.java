@@ -19,7 +19,11 @@ public class PayStrategyContext {
 
 //    @Autowired
 //    List<PayStrategy> payStrategyList;
-//
+
+    /**
+     * Autowired当使用在Collection里时，会将所申明类的所有实现类都放在那个指定的Collection里
+     * 如果Autowired和map使用的话呢，它将它bean的名称作为key,所有的bean作为value
+     */
 //    @Autowired
 //    Map<String, PayStrategy> payStrategyMap;
 
