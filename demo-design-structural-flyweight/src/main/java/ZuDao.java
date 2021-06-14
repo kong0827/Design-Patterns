@@ -40,6 +40,9 @@ public class ZuDao {
             }
             return null;
         }
+        if (!flyweight.isCanService()) {
+            return null;
+        }
         return flyweight;
     }
 }

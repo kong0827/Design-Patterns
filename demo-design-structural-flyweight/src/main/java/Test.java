@@ -19,5 +19,9 @@ public class Test {
         waitress3.service();
         System.out.println(waitress3);
 
+        waitress1.end();
+        AbstractWaitressFlyweight waitress = ZuDao.getWaitress("1");
+        waitress.service();
+
     }
 }
